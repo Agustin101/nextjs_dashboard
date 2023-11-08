@@ -1,0 +1,14 @@
+import './ui/global.css'
+import { roboto } from './ui/fonts'
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode
+}) {
+  console.log(roboto.className)
+  return (
+    <html lang='en'>
+      <body className={`${roboto.className} antialiased`}>{children}</body>
+    </html>
+  )
+}
